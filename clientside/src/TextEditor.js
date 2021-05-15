@@ -25,7 +25,7 @@ export default function TextEditor() {
     const [quill,setQuill]=useState()
 
     useEffect(()=>{
-        const s = io("https://opendocx.herokuapp.com/")
+        const s = io("/")
         setSocket(s)
 
         return ()=>{
